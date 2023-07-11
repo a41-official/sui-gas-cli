@@ -61,7 +61,7 @@ func main() {
 				panic(err)
 			}
 			nextReferenceGasPrice := gas.CalcGasPrice(validators)
-			gas.SubmitGasPrice(nextReferenceGasPrice)
+			gas.SubmitGasPrice(nextReferenceGasPrice - 5)
 		},
 	}
 
